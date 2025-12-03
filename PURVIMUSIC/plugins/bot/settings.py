@@ -12,8 +12,8 @@ from pyrogram.types import (
     Message,
 )
 
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.database import (
+from KAISENMUSIC import app
+from KAISENMUSIC.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -29,15 +29,15 @@ from PURVIMUSIC.utils.database import (
     skip_off,
     skip_on,
 )
-from PURVIMUSIC.utils.decorators.admins import ActualAdminCB
-from PURVIMUSIC.utils.decorators.language import language, languageCB
-from PURVIMUSIC.utils.inline.settings import (
+from KAISENMUSIC.utils.decorators.admins import ActualAdminCB
+from KAISENMUSIC.utils.decorators.language import language, languageCB
+from KAISENMUSIC.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from PURVIMUSIC.utils.inline.start import private_panel
+from KAISENMUSIC.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
