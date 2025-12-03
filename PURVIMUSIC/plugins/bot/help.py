@@ -3,16 +3,16 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton
 
-from PURVIMUSIC import app
-from PURVIMUSIC.utils import help_pannel
-from PURVIMUSIC.utils.database import get_lang
-from PURVIMUSIC.utils.decorators.language import LanguageStart, languageCB
-from PURVIMUSIC.utils.inline.help import help_back_markup, private_help_panel
+from KAISENMUSIC import app
+from KAISENMUSIC.utils import help_pannel
+from KAISENMUSIC.utils.database import get_lang
+from KAISENMUSIC.utils.decorators.language import LanguageStart, languageCB
+from KAISENMUSIC.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.stuffs.buttons import BUTTONS
-from PURVIMUSIC.utils.stuffs.helper import Helper
+from KAISENMUSIC.misc import SUDOERS
+from KAISENMUSIC.utils.stuffs.buttons import BUTTONS
+from KAISENMUSIC.utils.stuffs.helper import Helper
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
