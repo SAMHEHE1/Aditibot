@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import YouTube, app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils import AdminRightsCheck, seconds_to_min
-from PURVIMUSIC.utils.inline import close_markup
+from KAISENMUSIC import YouTube, app
+from KAISENMUSIC.core.call import KAISEN
+from KAISENMUSIC.misc import db
+from KAISENMUSIC.utils import AdminRightsCheck, seconds_to_min
+from KAISENMUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await PURVI.seek_stream(
+        await KAISEN.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
